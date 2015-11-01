@@ -14,7 +14,7 @@ Simple method for providing client_id and client_secret.  An example is given vi
 
 **CallAzureTranslate.py**
 
-An example of what the goal of the repo, a toolset for hitting Azure with Python.  Azure tokens expire every 10 minutes, so a refresh function will grab a new token if needed.
+An example of the repo's goal, a toolset for hitting Azure with Python.  Azure tokens expire every 10 minutes, so a refresh function will grab a new token if needed.
 
 *Primary Usage*
 
