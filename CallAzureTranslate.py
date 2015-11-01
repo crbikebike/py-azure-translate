@@ -15,6 +15,10 @@ class AzureAuth(AuthBase):
         r.headers['Authorization'] = self.username
         return r
 
+class AzureTranslateToken(object):
+    def __init__(self,client_id,client_secret):
+        pass
+
 #get token for auth to Azure - expires every 10 minutes
 def get_access_token():
     try:
