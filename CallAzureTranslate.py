@@ -3,10 +3,11 @@ import requests
 import json
 from requests.auth import AuthBase
 from datetime import datetime,timedelta
+from azureconf import azureconf
 from pprint import pprint
 
-azure_client_id = 'XByjdhZJAnzf2Vqm'
-azure_client_secret = 'kswZypvk/W3TcfaWrEjgC0gl+eSmvWR0QuRUvmd0fmY='
+azure_client_id = azureconf['client_id']
+azure_client_secret = azureconf['client_secret']
 
 #extend the auth class in requests to make sure the headers match what Azure expects
 class AzureAuth(AuthBase):
@@ -19,12 +20,11 @@ class AzureAuth(AuthBase):
         r.headers['Authorization'] = self.username
         return r
 
+
 class TranslateToken(object):
     def __init__(self,client_id,client_secret):
         self.client_id = client_id
         self.client_secret = client_secret
-
-    def get_translate_token(self):
         #get token for auth to Azure - expires every 600 seconds
         try:
             request_time = datetime.now()
@@ -44,13 +44,27 @@ class TranslateToken(object):
         except Exception as e:
             print ('Could not generate translation key because {}'.format(e))
 
+#    def get_translate_token(self):
+
+
+def init_token():
+    azure_init = TranslateToken(client_id=azure_client_id,client_secret=azure_client_secret)
+    return azure_init
+
+def check_token(azure_token):
+    if azure_token.expiretime <= datetime.now():
+        new_token = init_token()
+        return new_token
+    elif azure_token.expiretime > datetime.now():
+        return  azure_token
+    else:
+        print ('did not generate or return exception')
 
 #Getting a new access token each time because they expire and I'm not sure how to do a timer based on expiration time
-def get_translation(text):
-    translatetoken = TranslateToken(client_id=azure_client_id,client_secret=azure_client_secret)
-    translatetoken.get_translate_token()
+def get_translation(text,azure_token):
+    translate_token = check_token(azure_token)
     try:
-        accesstoken = translatetoken.access_token
+        accesstoken = translate_token.access_token
         url = 'http://api.microsofttranslator.com/v2/Http.svc/Translate'
         payload = {'text':text,'to':'es','from':'en'}
         auth = 'Bearer {}'.format(accesstoken)
