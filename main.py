@@ -1,6 +1,6 @@
 __author__ = 'chris'
 
-from CallAzureTranslate import get_translation,init_token
+from CallAzureTranslate import get_translation
 import xmltodict
 
 inputfile = 'inputfiles/AutoOrder.es-MX.resx'

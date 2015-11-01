@@ -4,7 +4,7 @@ import json
 from requests.auth import AuthBase
 from datetime import datetime,timedelta
 from azureconf import azureconf
-from pprint import pprint
+
 
 azure_client_id = azureconf['client_id']
 azure_client_secret = azureconf['client_secret']
@@ -72,7 +72,6 @@ def get_translation(text):
         url = 'http://api.microsofttranslator.com/v2/Http.svc/Translate'
         payload = {'text':text,'to':'es','from':'en'}
         auth = 'Bearer {}'.format(accesstoken)
-        #print (auth)
         r = requests.get(url=url,params=payload,auth=AzureAuth(auth))
         return r.text
 
