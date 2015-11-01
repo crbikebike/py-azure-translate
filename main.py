@@ -26,15 +26,15 @@ if __name__ == '__main__':
 
     #Translate the string values in the Data elements
     for item in obj['root']['data']:
-            translateme = item['value']
-            translatedrepsonse = get_translation(translateme)
-            translatedstring = get_trans_string(translatedrepsonse)
-            if translatedstring is not None:
-                print ('{} turned into {}'.format(translateme,translatedstring))
-                item['value'] = translatedstring
-            else:
-                print ('addding None as value')
-                item['value'] = None
+        translateme = item['value']
+        translatedrepsonse = get_translation(translateme)
+        translatedstring = get_trans_string(translatedrepsonse)
+        if translatedstring is not None:
+            print ('{} turned into {}'.format(translateme,translatedstring))
+            item['value'] = translatedstring
+        else:
+            print ('addding None as value')
+            item['value'] = None
 
     #pprint(obj)
 
