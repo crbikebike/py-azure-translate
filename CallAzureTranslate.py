@@ -10,6 +10,7 @@ azure_client_id = azureconf['client_id']
 azure_client_secret = azureconf['client_secret']
 azure_token = None
 
+
 #extend the auth class in requests to make sure the headers match what Azure expects
 class AzureAuth(AuthBase):
     """Gives ability to auth with Azure using the Authentication header"""
@@ -45,19 +46,20 @@ class TranslateToken(object):
         except Exception as e:
             print ('Could not generate translation key because {}'.format(e))
 
-
 def init_token():
     azure_init = TranslateToken(client_id=azure_client_id,client_secret=azure_client_secret)
     return azure_init
 
 #If token's end time is still valid, return original token, if not, or is None, init a new one and return that
-def check_token(azure_token):
+def check_token(token):
+    global azure_token
     try:
-        if azure_token is None or azure_token.expiretime <= datetime.now():
-            new_token = init_token()
-            return new_token
-        elif azure_token.expiretime > datetime.now():
-            return  azure_token
+        if token is None or token.expiretime <= datetime.now():
+            azure_token = init_token()
+            token = azure_token
+            return token
+        elif token.expiretime > datetime.now():
+            return  token
         else:
             raise Exception
     except Exception as e:
@@ -65,6 +67,7 @@ def check_token(azure_token):
 
 #Takes in a string, then returns the response from Azure Translate
 def get_translation(text):
+    global azure_token
     #make sure the token passed is still valid
     translate_token = check_token(azure_token)
     try:
