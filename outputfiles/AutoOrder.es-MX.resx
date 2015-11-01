@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace"></xsd:import>
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0"></xsd:element>
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string"></xsd:attribute>
+							<xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+							<xsd:attribute name="mimetype" type="xsd:string"></xsd:attribute>
+							<xsd:attribute ref="xml:space"></xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string"></xsd:attribute>
+							<xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"></xsd:element>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"></xsd:attribute>
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"></xsd:attribute>
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"></xsd:attribute>
+							<xsd:attribute ref="xml:space"></xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"></xsd:element>
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required"></xsd:attribute>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AddNewAddress" xml:space="preserve">
+		<value>Añadir una nueva dirección</value>
+	</data>
+	<data name="AutoOrderPreference" xml:space="preserve">
+		<value>Preferencias de auto envío</value>
+	</data>
+	<data name="AutoOrderSetting" xml:space="preserve">
+		<value>Configuración de auto envío</value>
+	</data>
+	<data name="BasicInfo" xml:space="preserve">
+		<value>Información básica</value>
+	</data>
+	<data name="CommissionSetting" xml:space="preserve">
+		<value>Configuración de la Comisión</value>
+	</data>
+	<data name="ContactInfo" xml:space="preserve">
+		<value>Información de contacto</value>
+	</data>
+	<data name="EnrollerSponsor" xml:space="preserve">
+		<value>Patrocinador/Sponsor</value>
+	</data>
+	<data name="PaymentMethod" xml:space="preserve">
+		<value>Métodos de pago</value>
+	</data>
+	<data name="SetPrimary" xml:space="preserve">
+		<value>Establece como principal</value>
+	</data>
+	<data name="YourAOPS" xml:space="preserve">
+		<value>Sus pedidos de Auto</value>
+	</data>
+	<data name="AddItemsText" xml:space="preserve">
+		<value>Añadir elementos adicionales a su Auto-ship a continuación. Puede ajustar las cantidades de la ficha de su carro una vez que se ha añadido un elemento.</value>
+	</data>
+	<data name="AddItemUppercase" xml:space="preserve">
+		<value>AGREGAR ELEMENTO</value>
+	</data>
+	<data name="AutoOrderItemsUpdated" xml:space="preserve">
+		<value>Artículos de auto envío actualizados</value>
+	</data>
+	<data name="CancelUppercase" xml:space="preserve">
+		<value>Cancelar</value>
+	</data>
+	<data name="ClickToAdd" xml:space="preserve">
+		<value>Haga clic para agregar productos al pedido de Auto envío</value>
+	</data>
+	<data name="EditProcessDate" xml:space="preserve">
+		<value>Editar fecha de procesamiento</value>
+	</data>
+	<data name="FrequencyUppercase" xml:space="preserve">
+		<value>FRECUENCIA</value>
+	</data>
+	<data name="ItemsUppercase" xml:space="preserve">
+		<value>ARTÍCULOS</value>
+	</data>
+	<data name="NextProcessDate" xml:space="preserve">
+		<value>PRÓXIMA FECHA DE PROCESAMIENTO</value>
+	</data>
+	<data name="OrderUppercase" xml:space="preserve">
+		<value>ORDEN</value>
+	</data>
+	<data name="ProcessDateUpdate" xml:space="preserve">
+		<value>Fecha de actualización de procesamiento</value>
+	</data>
+	<data name="ProductUppercase" xml:space="preserve">
+		<value>PRODUCTO</value>
+	</data>
+	<data name="QTY" xml:space="preserve">
+		<value>CANTIDAD</value>
+	</data>
+	<data name="SaveUppercase" xml:space="preserve">
+		<value>GUARDAR</value>
+	</data>
+	<data name="SorryErrorText" xml:space="preserve">
+		<value>Lo sentimos, hubo un error.</value>
+	</data>
+	<data name="UnitPriceUppercase" xml:space="preserve">
+		<value>PRECIO UNITARIO</value>
+	</data>
+	<data name="UPCPound" xml:space="preserve">
+		<value>UPC #</value>
+	</data>
+	<data name="YourCartUppercase" xml:space="preserve">
+		<value>SU CARRITO</value>
+	</data>
+	<data name="Browse" xml:space="preserve">
+		<value>Ver</value>
+	</data>
+	<data name="Cancel" xml:space="preserve">
+		<value>Cancelar</value>
+	</data>
+	<data name="Card" xml:space="preserve">
+		<value>Tarjeta</value>
+	</data>
+	<data name="CardEndingIn" xml:space="preserve">
+		<value>Tarjeta termina en</value>
+	</data>
+	<data name="CashPayments" xml:space="preserve">
+		<value>Pagos en efectivo</value>
+	</data>
+	<data name="ClickToManagePayments" xml:space="preserve">
+		<value>Haga clic para modificar sus tarjetas de crédito</value>
+	</data>
+	<data name="Delete" xml:space="preserve">
+		<value>Eliminar</value>
+	</data>
+	<data name="EditAddToOrder" xml:space="preserve">
+		<value>Editar y agregar a la orden</value>
+	</data>
+	<data name="EditingAutoOrderBankAccounts" xml:space="preserve">
+		<value>Edición de cuentas de Auto envío</value>
+	</data>
+	<data name="EditingAutoOrderCreditCards" xml:space="preserve">
+		<value>Editar tarjetas de crédito de Auto envío</value>
+	</data>
+	<data name="EditPaymentMethod" xml:space="preserve">
+		<value>Editar método de pago</value>
+	</data>
+	<data name="EditShipMethod" xml:space="preserve">
+		<value>Editar método de nave</value>
+	</data>
+	<data name="EditShippingAddress" xml:space="preserve">
+		<value>Editar dirección de envío</value>
+	</data>
+	<data name="Expires" xml:space="preserve">
+		<value>Vence</value>
+	</data>
+	<data name="Items" xml:space="preserve">
+		<value>ARTÍCULOS</value>
+	</data>
+	<data name="NameOnCard" xml:space="preserve">
+		<value>Nombre en la tarjeta</value>
+	</data>
+	<data name="OrderNumber" xml:space="preserve">
+		<value>Número de pedido</value>
+	</data>
+	<data name="Payment" xml:space="preserve">
+		<value>Pago</value>
+	</data>
+	<data name="PaymentMethodUpdated" xml:space="preserve">
+		<value>Método de pago actualizado</value>
+	</data>
+	<data name="ProblemWithInformationText" xml:space="preserve">
+		<value>Hubo un problema con la información, por favor, inténtelo de nuevo.</value>
+	</data>
+	<data name="Processing" xml:space="preserve">
+		<value>Procesamiento de</value>
+	</data>
+	<data name="SaveChanges" xml:space="preserve">
+		<value>Guardar los cambios</value>
+	</data>
+	<data name="SavedPaymentMethods" xml:space="preserve">
+		<value>GUARDADO EN FORMAS DE PAGO</value>
+	</data>
+	<data name="SavePrimaryAddress" xml:space="preserve">
+		<value>Guardar como mi dirección principal</value>
+	</data>
+	<data name="SecurityReEnterAccountNumber" xml:space="preserve">
+		<value>Por motivos de seguridad, por favor vuelva a entrar su número de cuenta</value>
+	</data>
+	<data name="ShipMethod" xml:space="preserve">
+		<value>Método de la nave</value>
+	</data>
+	<data name="ShipMethodUpdated" xml:space="preserve">
+		<value>Método de actualización de la nave</value>
+	</data>
+	<data name="ShippingAddress" xml:space="preserve">
+		<value>Dirección de envío</value>
+	</data>
+	<data name="ShippingAddressUpdated" xml:space="preserve">
+		<value>Dirección de envío actualizado</value>
+	</data>
+	<data name="Sorry" xml:space="preserve">
+		<value>Lo siento</value>
+	</data>
+	<data name="Total" xml:space="preserve">
+		<value>Total</value>
+	</data>
+	<data name="YourAccount" xml:space="preserve">
+		<value>Tu cuenta</value>
+	</data>
+	<data name="YourProfilePicture" xml:space="preserve">
+		<value>Tu foto de perfil</value>
+	</data>
+	<data name="ExpirationDate" xml:space="preserve">
+		<value>Fecha de vencimiento</value>
+	</data>
+	<data name="CardNumber" xml:space="preserve">
+		<value>Número de tarjeta de</value>
+	</data>
+	<data name="CreditCardType" xml:space="preserve">
+		<value>Tipo de tarjeta de crédito</value>
+	</data>
+	<data name="ExpirationMonth" xml:space="preserve">
+		<value>Mes de vencimiento</value>
+	</data>
+	<data name="WhatURLIsYourImage" xml:space="preserve">
+		<value>¿Qué URL se encuentra su imagen en?</value>
+	</data>
+	<data name="WhatIsYourEmail" xml:space="preserve">
+		<value>Lo que su correo electrónico dirección</value>
+	</data>
+	<data name="WhatIsYourFacebook" xml:space="preserve">
+		<value>¿Cuál es tu nombre de usuario de Facebook?</value>
+	</data>
+	<data name="UPCNumber" xml:space="preserve">
+		<value>UPC #</value>
+	</data>
+	<data name="AnUnexpectedErrorHasOccurred" xml:space="preserve">
+		<value>Ha ocurrido un error inesperado.</value>
+	</data>
+	<data name="YouDoNotHaveAnyAutoOrder" xml:space="preserve">
+		<value>No tienes ningún pedido de Auto envío en este momento.</value>
+	</data>
+	<data name="Monthly" xml:space="preserve">
+		<value>Mensual</value>
+	</data>
+	<data name="PrimaryCardOnFile" xml:space="preserve">
+		<value>Tarjeta de primario</value>
+	</data>
+	<data name="SecondaryCardOnFile" xml:space="preserve">
+		<value>Tarjeta secundaria</value>
+	</data>
+	<data name="ProcessingOn" xml:space="preserve">
+		<value>Procesamiento en</value>
+	</data>
+	<data name="Order" xml:space="preserve">
+		<value>Orden</value>
+	</data>
+	<data name="ShipTo" xml:space="preserve">
+		<value>Enviar a</value>
+	</data>
+	<data name="PaidWith" xml:space="preserve">
+		<value>Pagado con</value>
+	</data>
+	<data name="YourOrder" xml:space="preserve">
+		<value>Su orden</value>
+	</data>
+	<data name="FrequencyPrompt" xml:space="preserve">
+		<value>¿Con qué frecuencia desea recibir estos artículos?</value>
+	</data>
+	<data name="FrequencyType" xml:space="preserve">
+		<value>Tipo de frecuencia</value>
+	</data>
+	<data name="FutureAutoOrder" xml:space="preserve">
+		<value>Futuro Auto-ship</value>
+	</data>
+	<data name="LastAutoshipDate" xml:space="preserve">
+		<value>Última fecha de Auto envío</value>
+	</data>
+</root>

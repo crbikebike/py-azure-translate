@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Bonus_1_001" xml:space="preserve">
+    <value>Retail Commission</value>
+  </data>
+  <data name="Bonus_1_002" xml:space="preserve">
+    <value>First Order Bonus</value>
+  </data>
+  <data name="Bonus_1_003" xml:space="preserve">
+    <value>Dual Team Commissions</value>
+  </data>
+  <data name="Bonus_1_004" xml:space="preserve">
+    <value>Matching Bonus</value>
+  </data>
+  <data name="Bonus_1_005" xml:space="preserve">
+    <value>Bulk Order Bonus</value>
+  </data>
+  <data name="Bonus_1_006" xml:space="preserve">
+    <value>LifeStyle bonus</value>
+  </data>
+  <data name="Bonus_1_007" xml:space="preserve">
+    <value>Leadership Pool</value>
+  </data>
+  <data name="Bonus_1_008" xml:space="preserve">
+    <value>Founders Pool</value>
+  </data>
+  <data name="Bonus_1_009" xml:space="preserve">
+    <value>Business Builder Bonus</value>
+  </data>
+  <data name="Bonus_1_010" xml:space="preserve">
+    <value>Fast Track Bonus</value>
+  </data>
+  <data name="Bonus_1_011" xml:space="preserve">
+    <value>c3 Bonus</value>
+  </data>
+  <data name="Bonus_1_013" xml:space="preserve">
+    <value>Performace Bonus</value>
+  </data>
+  <data name="Bonus_1_014" xml:space="preserve">
+    <value>Retails Sales Override</value>
+  </data>
+  <data name="Bonus_1_015" xml:space="preserve">
+    <value>Enroller Bonus</value>
+  </data>
+  <data name="Bonus_1_099" xml:space="preserve">
+    <value>Rank Payout Caps</value>
+  </data>
+  <data name="Bonus_1_100" xml:space="preserve">
+    <value>Overall Cap</value>
+  </data>
+  <data name="CreditCardType_01" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="CreditCardType_02" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="CreditCardType_03" xml:space="preserve">
+    <value>MasterCard</value>
+  </data>
+  <data name="CreditCardType_04" xml:space="preserve">
+    <value>Amex</value>
+  </data>
+  <data name="CreditCardType_05" xml:space="preserve">
+    <value>Discover</value>
+  </data>
+  <data name="CreditCardType_06" xml:space="preserve">
+    <value>Switch</value>
+  </data>
+  <data name="CreditCardType_07" xml:space="preserve">
+    <value>Solo</value>
+  </data>
+  <data name="CreditCardType_08" xml:space="preserve">
+    <value>JCB</value>
+  </data>
+  <data name="CreditCardType_09" xml:space="preserve">
+    <value>Maestro</value>
+  </data>
+  <data name="CreditCardType_10" xml:space="preserve">
+    <value>Delta</value>
+  </data>
+  <data name="CreditCardType_11" xml:space="preserve">
+    <value>Laser</value>
+  </data>
+  <data name="CreditCardType_12" xml:space="preserve">
+    <value>ECMC</value>
+  </data>
+  <data name="CreditCardType_13" xml:space="preserve">
+    <value>BHS</value>
+  </data>
+  <data name="CreditCardType_14" xml:space="preserve">
+    <value>IKEA</value>
+  </data>
+  <data name="CreditCardType_15" xml:space="preserve">
+    <value>Diners</value>
+  </data>
+  <data name="CreditCardType_16" xml:space="preserve">
+    <value>CB</value>
+  </data>
+  <data name="CreditCardType_17" xml:space="preserve">
+    <value>Carte Bleue</value>
+  </data>
+  <data name="CreditCardType_18" xml:space="preserve">
+    <value>Dankort</value>
+  </data>
+  <data name="CreditCardType_19" xml:space="preserve">
+    <value>Aurore</value>
+  </data>
+  <data name="CreditCardType_20" xml:space="preserve">
+    <value>GE Capital</value>
+  </data>
+  <data name="CreditCardType_21" xml:space="preserve">
+    <value>AirPlus</value>
+  </data>
+  <data name="CreditCardType_22" xml:space="preserve">
+    <value>UATP</value>
+  </data>
+  <data name="CreditCardType_23" xml:space="preserve">
+    <value>Carte Blanche</value>
+  </data>
+  <data name="CreditCardType_24" xml:space="preserve">
+    <value>Visa Electron</value>
+  </data>
+  <data name="CreditCardType_25" xml:space="preserve">
+    <value>JAL</value>
+  </data>
+  <data name="CreditCardType_26" xml:space="preserve">
+    <value>GE Money</value>
+  </data>
+  <data name="CreditCardType_27" xml:space="preserve">
+    <value>En Route</value>
+  </data>
+  <data name="CreditCardType_28" xml:space="preserve">
+    <value>Carta Si</value>
+  </data>
+  <data name="CreditCardType_29" xml:space="preserve">
+    <value>Galeria</value>
+  </data>
+  <data name="CreditCardType_30" xml:space="preserve">
+    <value>CRM Falabella</value>
+  </data>
+  <data name="CreditCardType_31" xml:space="preserve">
+    <value>Debito Maestro</value>
+  </data>
+  <data name="CreditCardType_32" xml:space="preserve">
+    <value>V PAY</value>
+  </data>
+  <data name="CreditCardType_33" xml:space="preserve">
+    <value>China UnionPay</value>
+  </data>
+  <data name="CustomerStatus_00" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="CustomerStatus_01" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="CustomerStatus_02" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="CustomerStatus_03" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="CustomerStatus_04" xml:space="preserve">
+    <value>Cart Abandoned</value>
+  </data>
+  <data name="CustomerStatus_05" xml:space="preserve">
+    <value>Open Party</value>
+  </data>
+  <data name="CustomerStatus_06" xml:space="preserve">
+    <value>Closed Party</value>
+  </data>
+  <data name="CustomerStatus_07" xml:space="preserve">
+    <value>Cancelled Party</value>
+  </data>
+  <data name="CustomerStatus_08" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="CustomerType_01" xml:space="preserve">
+    <value>Retail Customer</value>
+  </data>
+  <data name="CustomerType_02" xml:space="preserve">
+    <value>Preferred Customer</value>
+  </data>
+  <data name="CustomerType_03" xml:space="preserve">
+    <value>Distributor</value>
+  </data>
+  <data name="CustomerType_04" xml:space="preserve">
+    <value>Brand Ambassador</value>
+  </data>
+  <data name="CustomerType_05" xml:space="preserve">
+    <value>IL Distributor</value>
+  </data>
+  <data name="CustomerType_06" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="CustomerType_07" xml:space="preserve">
+    <value>Reserved WebAlias</value>
+  </data>
+  <data name="CustomerType_08" xml:space="preserve">
+    <value>AU Distributor</value>
+  </data>
+  <data name="CustomerType_09" xml:space="preserve">
+    <value>CA Distributor</value>
+  </data>
+  <data name="CustomerType_10" xml:space="preserve">
+    <value>SG Distributor</value>
+  </data>
+  <data name="CustomerType_11" xml:space="preserve">
+    <value>Party Host/Hostess</value>
+  </data>
+  <data name="CustomerType_12" xml:space="preserve">
+    <value>Prospect or Lead</value>
+  </data>
+  <data name="FrequencyType_01" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="FrequencyType_02" xml:space="preserve">
+    <value>Every Two Weeks</value>
+  </data>
+  <data name="FrequencyType_03" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="FrequencyType_04" xml:space="preserve">
+    <value>Quarterly</value>
+  </data>
+  <data name="FrequencyType_05" xml:space="preserve">
+    <value>Twice a Year</value>
+  </data>
+  <data name="FrequencyType_06" xml:space="preserve">
+    <value>Yearly</value>
+  </data>
+  <data name="FrequencyType_07" xml:space="preserve">
+    <value>Bi-Monthly</value>
+  </data>
+  <data name="FrequencyType_08" xml:space="preserve">
+    <value>Every 4 weeks</value>
+  </data>
+  <data name="FrequencyType_09" xml:space="preserve">
+    <value>Every 6 Weeks</value>
+  </data>
+  <data name="FrequencyType_10" xml:space="preserve">
+    <value>Every 8 Weeks</value>
+  </data>
+  <data name="FrequencyType_11" xml:space="preserve">
+    <value>Every 12 Weeks</value>
+  </data>
+  <data name="Language_000" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Language_001" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="Language_002" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="Language_003" xml:space="preserve">
+    <value>Korean</value>
+  </data>
+  <data name="Language_004" xml:space="preserve">
+    <value>Belorussian</value>
+  </data>
+  <data name="Language_005" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="Language_006" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="Language_007" xml:space="preserve">
+    <value>Mandarin</value>
+  </data>
+  <data name="Language_008" xml:space="preserve">
+    <value>Chinese-Taiwan</value>
+  </data>
+  <data name="Language_009" xml:space="preserve">
+    <value>Thai</value>
+  </data>
+  <data name="Language_010" xml:space="preserve">
+    <value>Tagalec-Phillipino</value>
+  </data>
+  <data name="Language_011" xml:space="preserve">
+    <value>Hungarian</value>
+  </data>
+  <data name="Language_012" xml:space="preserve">
+    <value>Finnish</value>
+  </data>
+  <data name="Language_013" xml:space="preserve">
+    <value>Norsk</value>
+  </data>
+  <data name="Language_014" xml:space="preserve">
+    <value>Malay</value>
+  </data>
+  <data name="Language_015" xml:space="preserve">
+    <value>Indonesian</value>
+  </data>
+  <data name="Language_016" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="Language_017" xml:space="preserve">
+    <value>Italian</value>
+  </data>
+  <data name="Language_018" xml:space="preserve">
+    <value>Dutch</value>
+  </data>
+  <data name="Language_019" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="Language_020" xml:space="preserve">
+    <value>Slovakia</value>
+  </data>
+  <data name="Language_021" xml:space="preserve">
+    <value>Cyrillic</value>
+  </data>
+  <data name="Language_022" xml:space="preserve">
+    <value>Estonian</value>
+  </data>
+  <data name="Language_203" xml:space="preserve">
+    <value>Czech Republic</value>
+  </data>
+  <data name="OrderStatus_00" xml:space="preserve">
+    <value>Incomplete</value>
+  </data>
+  <data name="OrderStatus_01" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="OrderStatus_02" xml:space="preserve">
+    <value>CC Declined</value>
+  </data>
+  <data name="OrderStatus_03" xml:space="preserve">
+    <value>ACH Declined</value>
+  </data>
+  <data name="OrderStatus_04" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="OrderStatus_05" xml:space="preserve">
+    <value>CC Pending</value>
+  </data>
+  <data name="OrderStatus_06" xml:space="preserve">
+    <value>ACH Pending</value>
+  </data>
+  <data name="OrderStatus_07" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="OrderStatus_08" xml:space="preserve">
+    <value>Printed</value>
+  </data>
+  <data name="OrderStatus_09" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="OrderStatus_10" xml:space="preserve">
+    <value>Pending Inventory</value>
+  </data>
+  <data name="PayableType_00" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="PayableType_01" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="PayableType_02" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="PayableType_03" xml:space="preserve">
+    <value>Credit Voucher</value>
+  </data>
+  <data name="PayableType_04" xml:space="preserve">
+    <value>Net 30</value>
+  </data>
+  <data name="PayableType_05" xml:space="preserve">
+    <value>Net 60</value>
+  </data>
+  <data name="PayableType_06" xml:space="preserve">
+    <value>Use Credit</value>
+  </data>
+  <data name="PayableType_07" xml:space="preserve">
+    <value>ACH Debit</value>
+  </data>
+  <data name="PayableType_08" xml:space="preserve">
+    <value>Bank Draft</value>
+  </data>
+  <data name="PayableType_09" xml:space="preserve">
+    <value>Wire Transfer</value>
+  </data>
+  <data name="PayableType_10" xml:space="preserve">
+    <value>Point Redemption</value>
+  </data>
+  <data name="PayableType_11" xml:space="preserve">
+    <value>COD</value>
+  </data>
+  <data name="PayableType_12" xml:space="preserve">
+    <value>Money Order</value>
+  </data>
+  <data name="PayableType_13" xml:space="preserve">
+    <value>Bank Deposit</value>
+  </data>
+  <data name="PayableType_14" xml:space="preserve">
+    <value>Other 1</value>
+  </data>
+  <data name="PayableType_15" xml:space="preserve">
+    <value>Other 2</value>
+  </data>
+  <data name="PayableType_16" xml:space="preserve">
+    <value>Other 3</value>
+  </data>
+  <data name="PayableType_17" xml:space="preserve">
+    <value>Wallet</value>
+  </data>
+  <data name="PaymentType_00" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="PaymentType_01" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="PaymentType_02" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="PaymentType_03" xml:space="preserve">
+    <value>Credit Voucher</value>
+  </data>
+  <data name="PaymentType_04" xml:space="preserve">
+    <value>Net 30</value>
+  </data>
+  <data name="PaymentType_05" xml:space="preserve">
+    <value>Net 60</value>
+  </data>
+  <data name="PaymentType_06" xml:space="preserve">
+    <value>Use Credit</value>
+  </data>
+  <data name="PaymentType_07" xml:space="preserve">
+    <value>ACH Debit</value>
+  </data>
+  <data name="PaymentType_08" xml:space="preserve">
+    <value>Bank Draft</value>
+  </data>
+  <data name="PaymentType_09" xml:space="preserve">
+    <value>Wire Transfer</value>
+  </data>
+  <data name="PaymentType_10" xml:space="preserve">
+    <value>Point Redemption</value>
+  </data>
+  <data name="PaymentType_11" xml:space="preserve">
+    <value>COD</value>
+  </data>
+  <data name="PaymentType_12" xml:space="preserve">
+    <value>Money Order</value>
+  </data>
+  <data name="PaymentType_13" xml:space="preserve">
+    <value>Bank Deposit</value>
+  </data>
+  <data name="PaymentType_14" xml:space="preserve">
+    <value>Other 1</value>
+  </data>
+  <data name="PaymentType_15" xml:space="preserve">
+    <value>Other 2</value>
+  </data>
+  <data name="PaymentType_16" xml:space="preserve">
+    <value>Other 3</value>
+  </data>
+  <data name="PaymentType_17" xml:space="preserve">
+    <value>Wallet</value>
+  </data>
+  <data name="PeriodType_001" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="PointAccount_01" xml:space="preserve">
+    <value>Referral Points</value>
+  </data>
+  <data name="PointAccount_02" xml:space="preserve">
+    <value>Rewards Program</value>
+  </data>
+  <data name="PointAccount_03" xml:space="preserve">
+    <value>Wallet Account US</value>
+  </data>
+  <data name="PointAccount_04" xml:space="preserve">
+    <value>Wallet Account Pesos</value>
+  </data>
+  <data name="PointAccount_05" xml:space="preserve">
+    <value>Party Plan Credits</value>
+  </data>
+  <data name="PointAccount_06" xml:space="preserve">
+    <value>Virtual Bank</value>
+  </data>
+  <data name="PointAccount_07" xml:space="preserve">
+    <value>Cleanings</value>
+  </data>
+  <data name="Rank_00" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Rank_01" xml:space="preserve">
+    <value>Distributor</value>
+  </data>
+  <data name="Rank_02" xml:space="preserve">
+    <value>C-200</value>
+  </data>
+  <data name="Rank_03" xml:space="preserve">
+    <value>C-500</value>
+  </data>
+  <data name="Rank_04" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="Rank_05" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="Rank_06" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Rank_07" xml:space="preserve">
+    <value>Executive</value>
+  </data>
+  <data name="Rank_08" xml:space="preserve">
+    <value>Ruby Executive</value>
+  </data>
+  <data name="Rank_09" xml:space="preserve">
+    <value>Emerald Executive</value>
+  </data>
+  <data name="Rank_10" xml:space="preserve">
+    <value>Bronze 1</value>
+  </data>
+  <data name="Rank_20" xml:space="preserve">
+    <value>Bronze 2</value>
+  </data>
+  <data name="Rank_30" xml:space="preserve">
+    <value>Bronze 3</value>
+  </data>
+  <data name="Rank_40" xml:space="preserve">
+    <value>Silver 1</value>
+  </data>
+  <data name="Rank_50" xml:space="preserve">
+    <value>Silver 2</value>
+  </data>
+  <data name="Rank_60" xml:space="preserve">
+    <value>Silver 3</value>
+  </data>
+  <data name="Rank_70" xml:space="preserve">
+    <value>Gold 1</value>
+  </data>
+  <data name="Rank_80" xml:space="preserve">
+    <value>Gold 2</value>
+  </data>
+  <data name="Rank_90" xml:space="preserve">
+    <value>Gold 3</value>
+  </data>
+  <data name="Rank_100" xml:space="preserve">
+    <value>Platinum 1</value>
+  </data>
+  <data name="Rank_110" xml:space="preserve">
+    <value>Platinum 2</value>
+  </data>
+  <data name="Rank_120" xml:space="preserve">
+    <value>Platinum 3</value>
+  </data>
+  <data name="Rank_130" xml:space="preserve">
+    <value>Presidential Platinum</value>
+  </data>
+  <data name="Rank_140" xml:space="preserve">
+    <value>Crown Platinum</value>
+  </data>
+  <data name="Rank_11" xml:space="preserve">
+    <value>Double Diamond Executive</value>
+  </data>
+  <data name="Rank_12" xml:space="preserve">
+    <value>Platinum Executive</value>
+  </data>
+  <data name="Rank_13" xml:space="preserve">
+    <value>Double Platinum Executive</value>
+  </data>
+  <data name="Rank_14" xml:space="preserve">
+    <value>Triple Platinum Executive</value>
+  </data>
+  <data name="Subscription_01" xml:space="preserve">
+    <value>Backoffice Features</value>
+  </data>
+  <data name="Subscription_02" xml:space="preserve">
+    <value>Renewal</value>
+  </data>
+  <data name="Subscription_03" xml:space="preserve">
+    <value>Replicated Site</value>
+  </data>
+  <data name="Subscription_04" xml:space="preserve">
+    <value>Accum Test</value>
+  </data>
+  <data name="Subscription_05" xml:space="preserve">
+    <value>Pay Forward Test</value>
+  </data>
+  <data name="Subscription_06" xml:space="preserve">
+    <value>Reset Test</value>
+  </data>
+  <data name="Subscription_07" xml:space="preserve">
+    <value>Cleanings</value>
+  </data>
+  <data name="Subscription_08" xml:space="preserve">
+    <value>TEST</value>
+  </data>
+  <data name="Subscription_09" xml:space="preserve">
+    <value>BOSS</value>
+  </data>
+  <data name="Subscription_10" xml:space="preserve">
+    <value>Test For Ryte</value>
+  </data>
+  <data name="Volume_043" xml:space="preserve">
+    <value>Active Distributors in Enrollment Tree</value>
+  </data>
+  <data name="Volume_042" xml:space="preserve">
+    <value>Personal Retail Volume</value>
+  </data>
+  <data name="Volume_041" xml:space="preserve">
+    <value>Returned BV</value>
+  </data>
+  <data name="Volume_040" xml:space="preserve">
+    <value>Weekly BV Total</value>
+  </data>
+  <data name="Volume_039" xml:space="preserve">
+    <value>Personally Enrolled Dist Volume</value>
+  </data>
+  <data name="Volume_038" xml:space="preserve">
+    <value>Personal Enrollment Group Volume</value>
+  </data>
+  <data name="Volume_037" xml:space="preserve">
+    <value>Personal Retail Customers</value>
+  </data>
+  <data name="Volume_036" xml:space="preserve">
+    <value>Personally Enrolled Distributors</value>
+  </data>
+  <data name="Volume_035" xml:space="preserve">
+    <value>Qualified C-500 Legs</value>
+  </data>
+  <data name="Volume_034" xml:space="preserve">
+    <value>Performance Pack</value>
+  </data>
+  <data name="Volume_033" xml:space="preserve">
+    <value>NRGV Before Adjustments</value>
+  </data>
+  <data name="Volume_032" xml:space="preserve">
+    <value>NLGV Before Adjustments</value>
+  </data>
+  <data name="Volume_031" xml:space="preserve">
+    <value>12 week Retail Volume</value>
+  </data>
+  <data name="Volume_030" xml:space="preserve">
+    <value>PCV For 4 Week Period</value>
+  </data>
+  <data name="Volume_029" xml:space="preserve">
+    <value>Qualified Backoffice</value>
+  </data>
+  <data name="Volume_028" xml:space="preserve">
+    <value>Excess Volume PCV Amount</value>
+  </data>
+  <data name="Volume_027" xml:space="preserve">
+    <value>Excess Volume This Period</value>
+  </data>
+  <data name="Volume_026" xml:space="preserve">
+    <value>Starter Pack Purchase</value>
+  </data>
+  <data name="Volume_025" xml:space="preserve">
+    <value>PE Active Right Leg</value>
+  </data>
+  <data name="Volume_024" xml:space="preserve">
+    <value>PE Active Left Leg</value>
+  </data>
+  <data name="Volume_023" xml:space="preserve">
+    <value>High Performance Item Purchased</value>
+  </data>
+  <data name="Volume_022" xml:space="preserve">
+    <value>Retail Customer PV</value>
+  </data>
+  <data name="Volume_021" xml:space="preserve">
+    <value>Credit Card Total</value>
+  </data>
+  <data name="Volume_020" xml:space="preserve">
+    <value>Active Auto-order</value>
+  </data>
+  <data name="Volume_019" xml:space="preserve">
+    <value>Personally Enrolled Active Distributors</value>
+  </data>
+  <data name="Volume_018" xml:space="preserve">
+    <value>Period PCV</value>
+  </data>
+  <data name="Volume_017" xml:space="preserve">
+    <value>Lesser Leg Volume Added</value>
+  </data>
+  <data name="Volume_016" xml:space="preserve">
+    <value>Lesser Leg Volume</value>
+  </data>
+  <data name="Volume_015" xml:space="preserve">
+    <value>New Right Group Volume</value>
+  </data>
+  <data name="Volume_014" xml:space="preserve">
+    <value>New Left Group Volume</value>
+  </data>
+  <data name="Volume_013" xml:space="preserve">
+    <value>Carry Forward Right Group Volume</value>
+  </data>
+  <data name="Volume_012" xml:space="preserve">
+    <value>Carry Forward Left Group Volume</value>
+  </data>
+  <data name="Volume_011" xml:space="preserve">
+    <value>Right Group Volume</value>
+  </data>
+  <data name="Volume_010" xml:space="preserve">
+    <value>Left Group Volume</value>
+  </data>
+  <data name="Volume_009" xml:space="preserve">
+    <value>Binary Matches</value>
+  </data>
+  <data name="Volume_008" xml:space="preserve">
+    <value>Binary Flush</value>
+  </data>
+  <data name="Volume_007" xml:space="preserve">
+    <value>Binary Bankable</value>
+  </data>
+  <data name="Volume_006" xml:space="preserve">
+    <value>Binary Qualified</value>
+  </data>
+  <data name="Volume_005" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Volume_004" xml:space="preserve">
+    <value>GBV</value>
+  </data>
+  <data name="Volume_003" xml:space="preserve">
+    <value>GCV</value>
+  </data>
+  <data name="Volume_002" xml:space="preserve">
+    <value>PBV</value>
+  </data>
+  <data name="Volume_001" xml:space="preserve">
+    <value>PCV</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Volume_044" xml:space="preserve">
+    <value>Personal Customer Volume (PCV)</value>
+  </data>
+  <data name="Volume_045" xml:space="preserve">
+    <value>Active Legs</value>
+  </data>
+  <data name="Volume_046" xml:space="preserve">
+    <value>Personal Bonus Volume (PBV)</value>
+  </data>
+  <data name="Volume_047" xml:space="preserve">
+    <value>Active Lines</value>
+  </data>
+  <data name="Volume_048" xml:space="preserve">
+    <value>Personal Volume</value>
+  </data>
+  <data name="Volume_049" xml:space="preserve">
+    <value>Silver 1 Legs</value>
+  </data>
+  <data name="Volume_050" xml:space="preserve">
+    <value>Silver 2 Legs</value>
+  </data>
+  <data name="Volume_051" xml:space="preserve">
+    <value>Silver 3 Legs</value>
+  </data>
+  <data name="Volume_052" xml:space="preserve">
+    <value>Gold 1 Legs</value>
+  </data>
+  <data name="Volume_053" xml:space="preserve">
+    <value>Gold 2 Legs</value>
+  </data>
+  <data name="Volume_054" xml:space="preserve">
+    <value>Gold 3 Legs</value>
+  </data>
+  <data name="Volume_055" xml:space="preserve">
+    <value>Platinum 1 Legs</value>
+  </data>
+  <data name="Volume_056" xml:space="preserve">
+    <value>Platinum 2 Legs</value>
+  </data>
+  <data name="Volume_057" xml:space="preserve">
+    <value>Platinum 3 Legs</value>
+  </data>
+</root>
