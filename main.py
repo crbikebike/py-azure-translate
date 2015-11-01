@@ -19,9 +19,6 @@ def get_trans_string(translatedresponse):
 
 if __name__ == '__main__':
 
-    #initialize the token for Azure
-    translate_token = init_token()
-
     #Open file and load the XML doc into a Dict
     with open(inputfile,mode='r') as fd:
         obj = xmltodict.parse(fd.read())
@@ -30,7 +27,7 @@ if __name__ == '__main__':
     #Translate the string values in the Data elements
     for item in obj['root']['data']:
         translateme = item['value']
-        translatedrepsonse = get_translation(text=translateme,azure_token=translate_token)
+        translatedrepsonse = get_translation(text=translateme)
         translatedstring = get_trans_string(translatedrepsonse)
         if translatedstring is not None:
             print ('{} turned into {}'.format(translateme,translatedstring))

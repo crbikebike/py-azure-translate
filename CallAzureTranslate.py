@@ -8,6 +8,7 @@ from pprint import pprint
 
 azure_client_id = azureconf['client_id']
 azure_client_secret = azureconf['client_secret']
+azure_token = None
 
 #extend the auth class in requests to make sure the headers match what Azure expects
 class AzureAuth(AuthBase):
@@ -44,24 +45,27 @@ class TranslateToken(object):
         except Exception as e:
             print ('Could not generate translation key because {}'.format(e))
 
-#    def get_translate_token(self):
-
 
 def init_token():
     azure_init = TranslateToken(client_id=azure_client_id,client_secret=azure_client_secret)
     return azure_init
 
+#If token's end time is still valid, return original token, if not, or is None, init a new one and return that
 def check_token(azure_token):
-    if azure_token.expiretime <= datetime.now():
-        new_token = init_token()
-        return new_token
-    elif azure_token.expiretime > datetime.now():
-        return  azure_token
-    else:
-        print ('did not generate or return exception')
+    try:
+        if azure_token is None or azure_token.expiretime <= datetime.now():
+            new_token = init_token()
+            return new_token
+        elif azure_token.expiretime > datetime.now():
+            return  azure_token
+        else:
+            raise Exception
+    except Exception as e:
+        print ("Did not check token because {}".format(e))
 
-#Getting a new access token each time because they expire and I'm not sure how to do a timer based on expiration time
-def get_translation(text,azure_token):
+#Takes in a string, then returns the response from Azure Translate
+def get_translation(text):
+    #make sure the token passed is still valid
     translate_token = check_token(azure_token)
     try:
         accesstoken = translate_token.access_token
