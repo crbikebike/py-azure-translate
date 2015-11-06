@@ -18,7 +18,7 @@ An example of the repo's goal, a toolset for hitting Azure with Python.  Azure t
 
 *Primary Usage*
 
-Contains a function named get_translate that will take a string and return the full XML response from Azure's Translation service.  Future implementations may return only the string value, however due to the final usecase in main.py not being clear the metadata from the response is included in the response.  This means the receiver will need to parse the <string> XML tag to get the translated string value.  Also currently hardcoded to go from English to Spanish.  Lots of other config options to be had in the future.
+Contains a function named get_translate that will take an English string and return Spanish string from Azure's Translation service.  Currently hardcoded to go from English to Spanish.  Lots of other config options to be had in the future.
 
 **main.py**
 
