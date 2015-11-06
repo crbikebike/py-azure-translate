@@ -12,6 +12,7 @@ outputfile = 'outputfiles/AutoOrder.es-MX.resx'
 
 if __name__ == '__main__':
 
+    #define translator object that will do the heavy lifting
     translator = AzureTranslator(azure_client_id, azure_client_secret)
 
     #Open file and load the XML doc into a Dict

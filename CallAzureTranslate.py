@@ -17,6 +17,7 @@ class AzureAuth(AuthBase):
         r.headers['Authorization'] = self.access_token
         return r
 
+#this is an Azure access token that will expire 10 minutes after creation
 class AzureToken(object):
     def __init__(self,access_token, expiry_seconds):
         self.access_token = access_token
@@ -38,9 +39,10 @@ class AzureTranslator(object):
         self.client_secret = client_secret
         self.token = None
 
-    #method called on object to translate text
+    #method called to translate text
     def translate(self, text):
         response = self.request_translation(text)
+        #Azure returns an XML set with lots of extra data, strip all that and return only string or None
         dict_trans = xmltodict.parse(response)
         try:
             just_string = dict_trans['string']['#text']
@@ -55,6 +57,7 @@ class AzureTranslator(object):
         #make sure token is still valid
         token = self.get_token()
 
+        #with valid token, call Azure translate service
         try:
             url = 'http://api.microsofttranslator.com/v2/Http.svc/Translate'
             payload = {'text':text,'to':'es','from':'en'}
@@ -65,6 +68,7 @@ class AzureTranslator(object):
         except Exception as e:
             print ('could not translate because {}'.format(e))
 
+    #return new or valid token, depending on state of self.token
     def get_token(self):
         try:
             if self.token is None or self.token.is_expired():
@@ -75,6 +79,7 @@ class AzureTranslator(object):
         except Exception as e:
             print ("Did not get token because {}".format(e))
 
+    #when self.token is expired or None, called to get a valid access token
     def refresh_token(self):
         #grab new auth token when called
         try:
