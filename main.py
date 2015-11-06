@@ -1,23 +1,18 @@
 __author__ = 'chris'
 
-from CallAzureTranslate import get_translation
+from CallAzureTranslate import AzureTranslator
 import xmltodict
+from azureconf import azureconf
+
+azure_client_id = azureconf['client_id']
+azure_client_secret = azureconf['client_secret']
 
 inputfile = 'inputfiles/AutoOrder.es-MX.resx'
 outputfile = 'outputfiles/AutoOrder.es-MX.resx'
 
-#This doc's XML format will either have a string for a value or not - so we want to return that value or None
-def get_trans_string(translatedresponse):
-    dict_trans = xmltodict.parse(translatedresponse)
-    try:
-        just_string = dict_trans['string']['#text']
-        return (just_string)
-    except KeyError:
-        return None
-    except Exception as e:
-        print ("Could not get string value because {}".format(e))
-
 if __name__ == '__main__':
+
+    translator = AzureTranslator(azure_client_id, azure_client_secret)
 
     #Open file and load the XML doc into a Dict
     with open(inputfile,mode='r') as fd:
@@ -27,8 +22,7 @@ if __name__ == '__main__':
     #Translate the string values in the Data elements
     for item in obj['root']['data']:
         translateme = item['value']
-        translatedrepsonse = get_translation(text=translateme)
-        translatedstring = get_trans_string(translatedrepsonse)
+        translatedstring = translator.translate(translateme)
         if translatedstring is not None:
             print ('{} turned into {}'.format(translateme,translatedstring))
             item['value'] = translatedstring
